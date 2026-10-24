@@ -187,3 +187,51 @@ footer {
         width: 100%;
     }
 }
+
+/* Profile dropdown */
+.profile {
+    margin-left: auto;
+    position: relative;
+}
+
+.profile button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 240px;
+    background: #dedede;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #0002;
+    z-index: 10;
+}
+
+.dropdown p {
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 0;
+}
+
+/* Show the dropdown when clicked */
+.dropdown.show {
+    display: block;
+}
+

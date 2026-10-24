@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "author": "Indrek",
+    "createdAt": "October 6, 2026",
+    "text": "A quiet street in Tartu.",
+    "image": "https://picsum.photos/id/22/600/360"
+  },
+  {
+    "id": 2,
+    "author": "Markus",
+    "createdAt": "October 6, 2026",
+    "text": "Coffee before the morning lecture.",
+    "image": null
+  },
+  {
+    "id": 3,
+    "author": "Tiit",
+    "createdAt": "October 6, 2026",
+    "text": "Got absolutely knackered here.",
+    "image": "https://picsum.photos/id/22/600/360"
+  },
+  {
+    "id": 4,
+    "author": "Raz",
+    "createdAt": "October 6, 2026",
+    "text": "What a lad.",
+    "image": null
+  },
+  {
+    "id": 5,
+    "author": "Athena",
+    "createdAt": "October 5, 2026",
+    "text": "On this street a bloke got silly drunk and past out.",
+    "image": "https://picsum.photos/id/22/600/360"
+  },
+  {
+    "id": 6,
+    "author": "Boris",
+    "createdAt": "October 5, 2026",
+    "text": "Guten morgen!",
+    "image": null
+  },
+  {
+    "id":7,
+    "author": "Ingrid",
+    "createdAt": "October 5, 2026",
+    "text": "Lovely weather",
+    "image": "https://picsum.photos/id/16/600/360"
+  },
+  {
+    "id": 8,
+    "author": "Maks",
+    "createdAt": "October 4, 2026",
+    "text": "What a wonderful day",
+    "image": null
+  },
+  {
+    "id": 9,
+    "author": "CHarlotte",
+    "createdAt": "October 3, 2026",
+    "text": "wazzzup!",
+    "image": null
+  },
+  {
+    "id": 10,
+    "author": "Mater",
+    "createdAt": "October 3, 2026",
+    "text": "Waaaazzzzzzzuup!",
+    "image": "https://picsum.photos/seed/weekend/600/360"
+  }
+]
