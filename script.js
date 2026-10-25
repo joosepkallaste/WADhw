@@ -1,8 +1,15 @@
+// JSON online filelink: https://www.npoint.io/docs/98a68cb9b8036dcb2ab0
+// We used https://www.npoint.io/ for this. it is a free service that allows you to create a JSON file and get a URL for it. 
+// This is useful for testing and prototyping.
+
+// For the photos we used https://picsum.photos/ which is a free service that provides random images.
+
+// For the JSON file we used https://jsonformatter.org/json-pretty-print which is a free service that allows you to format and validate JSON data.
 
 async function loadPosts() {
     try {
         const response = await fetch("./posts.json");
-        //const response = await fetch("https://api.npoint.io/7836b8d575c5e386aefa");
+        //const response = await fetch("https://api.npoint.io/98a68cb9b8036dcb2ab0");
 
 
         if (!response.ok) {
@@ -50,13 +57,16 @@ async function loadPosts() {
     }
 }
 
-loadPosts();
+if (document.getElementById("posts")) {
+    loadPosts();
+}
 
- // Profile dropdown
+
+
 const profileButton = document.getElementById("profileButton");
 const profileMenu = document.getElementById("profileMenu");
+
 
 profileButton.addEventListener("click", function() {
     profileMenu.classList.toggle("show");
 });
-

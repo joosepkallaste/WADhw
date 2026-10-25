@@ -188,7 +188,6 @@ footer {
     }
 }
 
-/* Profile dropdown */
 .profile {
     margin-left: auto;
     position: relative;
@@ -230,7 +229,6 @@ footer {
     padding: 8px 0;
 }
 
-/* Show the dropdown when clicked */
 .dropdown.show {
     display: block;
 }
