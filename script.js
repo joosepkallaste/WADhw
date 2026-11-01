@@ -36,7 +36,7 @@ async function loadPosts() {
             if (post.image) {
                 const img = document.createElement("img");
                 img.src = post.image;
-                img.alt = "Post image";
+                img.alt = post.author + "'s post image";
                 article.appendChild(img);
             }
 
@@ -54,6 +54,7 @@ async function loadPosts() {
 
     } catch (error) {
         console.error("Error loading posts:", error);
+        feed.innerHTML = "<p>Failed to load posts.</p>";
     }
 }
 
