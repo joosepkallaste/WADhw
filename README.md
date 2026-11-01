@@ -1,5 +1,5 @@
 # Web Application Development
-Homework 1
+Homework
 
 Team members:
 Joosep-Gre Kallaste and Indrek Nemvalts

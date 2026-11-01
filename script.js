@@ -8,8 +8,8 @@
 
 async function loadPosts() {
     try {
-        //const response = await fetch("./posts.json");
-        const response = await fetch("https://api.npoint.io/98a68cb9b8036dcb2ab0");
+        const response = await fetch("./posts.json");
+        //const response = await fetch("https://api.npoint.io/98a68cb9b8036dcb2ab0");
 
 
         if (!response.ok) {
