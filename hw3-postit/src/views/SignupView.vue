@@ -44,9 +44,46 @@ export default {
   },
   methods: {
     handleSignup() {
-      // TODO
+      let errors = []
 
-      this.$router.push("/")
+      // Password length: 8 to 14 characters
+      if (this.password.length < 8 || this.password.length >= 15) {
+        errors.push("Password must be 8 to 14 characters long")
+      }
+
+      // At least one uppercase letter
+      if (!/[A-Z]/.test(this.password)) {
+        errors.push("Must contain at least one uppercase letter")
+      }
+
+      // At least two lowercase letters
+      let lowercase = this.password.match(/[a-z]/g)
+      if (!lowercase || lowercase.length < 2) {
+        errors.push("Must contain at least two lowercase letters")
+      }
+
+      // At least one number
+      if (!/[0-9]/.test(this.password)) {
+        errors.push("Must contain at least one number")
+      }
+
+      // Must start with an uppercase letter
+      if (!/^[A-Z]/.test(this.password)) {
+        errors.push("Must start with an uppercase letter")
+      }
+
+      // Must contain an underscore
+      if (!this.password.includes("_")) {
+        errors.push("Must contain an underscore (_)")
+      }
+
+      // Display errors or continue
+      if (errors.length > 0) {
+        this.errorMessage = "Password is not valid:\n" + errors.join("\n")
+      } else {
+        this.errorMessage = ""
+        this.$router.push("/")
+      }
     }
   }
 }
@@ -94,6 +131,7 @@ export default {
   font-size: 0.9rem;
   margin: 0;
   text-align: left;
+  white-space: pre-line;
 }
 
 .signup-btn {
